@@ -14,10 +14,10 @@
     <title>Landing form Santiago Gutiérrez</title>
 </head>
 <body>
-    <header>
-        <img src="/media/logo.png" alt="lorem">
-        <section>
-            <div>
+    <header class="container-fluid bg-dark text-white p-5 text-center">
+        <img src="/media/Lorem_Ipsum.svg" alt="lorem" class="my-5 logo">
+        <section class="row mx-auto gap-5 mt-5">
+            <div  class="col text-start">
                 <h1>
                     The way Mr. Darling won her was this
                 </h1>
@@ -28,24 +28,50 @@
                     took a cab and nipped in first, and so he got her.
                 </p>
             </div>
-            <form id="msform" onsubmit="return false">
-                <fieldset>
-                    <input type="text" id="name" name="name" placeholder="First Name*"/> 
+            <form id="msform" class="col" onsubmit="return false">
+                <fieldset class="container">
+                    <div class="row mb-3">
+                        <div class="form-group col-sm-6">
+                            
+                            <input type="text" class="form-control" id="name" name="name" placeholder="First Name*" required>
+                        </div>
+    
+                        <div class="form-group col-sm-6">
+                            
+                            <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name*" required>
+                        </div>
 
-                    <input type="text" id="name" name="name" placeholder="Last Name*"/>
+                    </div>
+                    <div class="row mb-3">
 
-                    <input type="email" id="email" name="email" placeholder="Email*"/>
+                        <div class="form-group col-sm-6">
+                            <input class="form-control" type="email" id="email" name="email" placeholder="Email*"/>
 
-                    <input type="text" id="job" name="job" placeholder="Job Title*"/>
+                        </div>
 
-                    <input type="text" id="company" name="company" placeholder="Company Name"/>
+                        <div class="form-group col-sm-6"> 
+                            <input class="form-control" type="text" id="job" name="job" placeholder="Job Title*"/>
+                        </div>
 
-                    <input type="url" id="web" name="web" placeholder="Website URL"/>
+                    </div>
 
-                    <input type="text" id="revenue" name="revenue" placeholder="Annual Revenue "/>
-                    Annual Revenue 
-
-                    <input type="submit" name="submit"/>
+                    <div class="row mb-3"> 
+                        <div class="form-group col-sm-6">
+                            <input class="form-control" type="text" id="company" name="company" placeholder="Company Name"/>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input class="form-control" type="url" id="web" name="web" placeholder="Website URL"/>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="form-group col-12">
+                            <input class="form-control" type="text" id="revenue" name="revenue" placeholder="Annual Revenue "/>
+                        </div>
+                    </div>
+                    <div class="text-start button__Form">
+                        <input type="submit" name="submit" value="submit" class="btn btn-lg "/>
+                    </div>
+                 
                 </fieldset>
                 
             </form>
@@ -56,6 +82,7 @@
     </main>
 
     <footer>
+
 
     </footer>
 
