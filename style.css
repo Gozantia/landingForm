@@ -363,7 +363,7 @@ footer p {
 
     main::after {
         content: " ";
-        background: url(/media/lines_bg.png);
+        background: url(media/lines_bg.png);
         background-size: 639px 119px; 
         position: absolute;
         width: 639px;
